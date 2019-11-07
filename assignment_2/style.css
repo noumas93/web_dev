@@ -5,10 +5,10 @@ height: 100vh;
 display: flex;
 align-items: center;
 justify-content: center;
+flex-direction: column;
 }
 
 .wrappar{
-
 display: flex;
 align-items: center;
 justify-content: center;
@@ -19,7 +19,7 @@ border : 1px solid red;
 }
 
 .imwrap {
-  background-color: white;
+background-color: white;
 padding: 10px;
 margin: auto;
 height: 500px ;
@@ -35,6 +35,11 @@ object-fit: cover;
 margin: auto;
 }
 
+.imwrap:hover .opaqueBox {
+  visibility: visible;
+
+
+}
 .lArrow {
   margin: 10px;
   width: 0;
@@ -57,8 +62,11 @@ left: 0%;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 1.5em;
 color: white;
+visibility: hidden;
 
 }
+
+
 
 body > div > div.imwrap > div > p {
 margin-left : 5%;
@@ -79,4 +87,19 @@ margin-left : 5%;
   opacity: 0.5;
   cursor: pointer;
 
+}
+
+.boxes img {
+background-color: rgba(255, 255 , 255 , 0);
+padding: 3px;
+margin-top: 15px;
+margin-left: 10px;
+height: 100px;
+width: 100px;
+object-fit: cover;
+
+}
+.boxes img:hover {
+cursor: pointer;
+opacity: 0.5;
 }
