@@ -8,6 +8,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="\\ad.liu.se\home\mohma171\Desktop\729G26\labb4\exc-3/theme.blackice.min.css">
+    
+
+    <script type="text/javascript" src="\\ad.liu.se\home\mohma171\Desktop\729G26\labb4\exc-3/jquery.tablesorter.js"></script>
+    
     <script type="text/javascript" src="main-e3.js"></script>
     <link href="featherlight.min.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
@@ -18,23 +24,25 @@
 
         <div class="img-wrap">
 
-            <div id="imgBox1" class="img-box droppable" data-featherlight="#imgBox1">
-
+            <div  class="img-box droppable" data-featherlight="#imgBox1">
+                <img id="imgBox1" class="displayNone" src="" alt="">
             </div>
 
-            <div id="imgBox2" class="img-box droppable" data-featherlight="#imgBox2">
-
+            <div class="img-box droppable" data-featherlight="#imgBox2">
+                <img id="imgBox2" class="displayNone" src="" alt="">
             </div>
 
-            <div id="imgBox3" class="img-box droppable" data-featherlight="#imgBox3">
-
+            <div class="img-box droppable" data-featherlight="#imgBox3">
+                <img id="imgBox3" class="displayNone" src="" alt="">
             </div>
 
         </div>
+       <button class="resetButton">Reset all images</button> 
 
         <div class="table-wrap">
 
-            <table class="my-table" style="width:100%">
+            <table id="myTable" class="tablesorter" style="width:100%">
+               <thead>
                 <tr>
                     <th>Name</th>
                     <th>id</th>
@@ -42,13 +50,15 @@
                     <th>in stock</th>
                     <th>picture</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>Fish</td>
                     <td>1</td>
                     <td>2013-11-16</td>
                     <td>100</td>
 
-                    <td><img class="draggable" src="img/image1.jpg" alt=""></td>
+                    <td><img id="imgBox1" class="draggable" src="img/image1.jpg" alt=""></td>
                 </tr>
                 <tr>
                     <td>Corn</td>
@@ -71,6 +81,7 @@
                     <td>32</td>
                     <td><img class="draggable" src="img/image4.jpg" alt=""></td>
                 </tr>
+            </tbody>
             </table>
 
         </div>

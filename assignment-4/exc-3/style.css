@@ -6,6 +6,12 @@ align-items: center;
 
 }
 
+.displayNone{
+    display: none;
+    height: 500px;
+    width: 700px;
+}
+
 .img-wrap{
     display: flex;
     flex-direction: row;
@@ -19,7 +25,6 @@ align-items: center;
     height: 191px;
     width: 278px;
     pointer-events: none;
-
 }
 
 .table-wrap {
